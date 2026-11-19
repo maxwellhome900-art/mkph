@@ -6,19 +6,20 @@
  * Prices live in src/config/packages.ts.
  */
 export const site = {
-  monogram: "ZÉE",
-  photographerName: "Zee Navarro",
-  title: "Zee Navarro · Times Square Photography",
+  monogram: "Z",
+  photographerName: "Z photos",
+  copyrightName: "Mark",
+  title: "Z photos · Times Square Photography",
   description:
     "Capturing unforgettable moments in the heart of New York City. Experience Times Square through my lens.",
   footerDescription:
     "Editorial portraits and night photography in the neon heart of New York City.",
   url: "https://zeenavarro.com",
   email: "hello@zeenavarro.com",
-  phoneDisplay: "+1 (212) 555-0148",
-  phoneHref: "tel:+12125550148",
+  phoneDisplay: "(347) 824-5460",
+  phoneHref: "tel:+13478245460",
   whatsappUrl:
-    "https://wa.me/12125550148?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20Times%20Square%20photoshoot.",
+    "https://wa.me/13478245460?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20Times%20Square%20photoshoot.",
   instagramHandle: "@zeenavarro",
   instagramUrl: "https://instagram.com/zeenavarro",
   location: "Times Square, New York City",

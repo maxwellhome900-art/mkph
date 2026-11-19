@@ -1,15 +1,13 @@
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { site } from "../config/site";
 import { useBooking } from "../context/BookingContext";
 import { createRequestId, saveContactMessage } from "../lib/bookingStore";
-import { btnPrimary, btnSecondary } from "../lib/styles";
+import { btnPrimary } from "../lib/styles";
 import { validateContact } from "../lib/validation";
 import { TextField } from "./ui/Fields";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
-import { InstagramIcon } from "./ui/InstagramIcon";
-import { WhatsAppIcon } from "./ui/WhatsAppIcon";
 
 export function ContactSection() {
   const { openBooking } = useBooking();
@@ -44,12 +42,6 @@ export function ContactSection() {
               Tell me about the trip, the people, and the hour you want. Or book a session directly and I'll confirm the time with you.
             </p>
             <ul className="mt-8 space-y-4 text-sm">
-              <li>
-                <a className="inline-flex items-center gap-3 text-paper hover:text-neon" href={`mailto:${site.email}`}>
-                  <Mail size={16} aria-hidden="true" />
-                  {site.email}
-                </a>
-              </li>
               <li className="inline-flex items-center gap-3 text-paper">
                 <MapPin size={16} aria-hidden="true" />
                 {site.location}
@@ -61,18 +53,7 @@ export function ContactSection() {
                 </a>
               </li>
             </ul>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <a className={btnSecondary} href={site.instagramUrl} target="_blank" rel="noreferrer">
-                <InstagramIcon className="size-4" />
-                Instagram
-                <ArrowUpRight size={14} aria-hidden="true" />
-              </a>
-              <a className={btnSecondary} href={site.whatsappUrl} target="_blank" rel="noreferrer">
-                <WhatsAppIcon className="size-4" />
-                WhatsApp
-              </a>
-            </div>
-            <button type="button" className={`${btnPrimary} mt-6`} onClick={() => openBooking()}>
+            <button type="button" className={`${btnPrimary} mt-8`} onClick={() => openBooking()}>
               Book your photoshoot
             </button>
           </Reveal>
@@ -104,7 +85,7 @@ export function ContactSection() {
                   type="email"
                   value={email}
                   autoComplete="email"
-                  placeholder={site.email}
+                  placeholder="you@email.com"
                   error={errors.email}
                   onChange={setEmail}
                 />

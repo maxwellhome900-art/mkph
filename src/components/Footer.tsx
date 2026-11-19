@@ -79,7 +79,7 @@ export function Footer() {
       </div>
       <div className="relative z-10 border-t border-white/10 px-5 py-5 md:px-10 lg:px-16">
         <p className="text-xs tracking-wide text-muted">
-          © {year} {site.photographerName}. All rights reserved.
+          © {year} {site.copyrightName}. All rights reserved.
         </p>
       </div>
       <p

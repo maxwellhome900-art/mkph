@@ -37,7 +37,7 @@ export function saveContactMessage(message: ContactMessage): void {
 export function createRequestId(): string {
   const year = new Date().getFullYear();
   const token = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `ZEE-${year}-${token}`;
+  return `Z-${year}-${token}`;
 }
 
 export function createEmptyCustomer(): CustomerInfo {

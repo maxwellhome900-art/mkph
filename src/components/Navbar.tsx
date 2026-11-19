@@ -38,9 +38,8 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-[4.5rem] max-w-[1440px] items-center justify-between px-5 md:px-10 lg:px-16">
-        <a href="#home" className="leading-none" onClick={() => setMenuOpen(false)}>
-          <span className="block font-display text-[1.65rem] tracking-[0.18em] text-paper">{site.monogram}</span>
-          <span className="mt-1 block font-grotesk text-[9px] tracking-[0.42em] text-muted">TIMES SQUARE</span>
+        <a href="#home" className="font-display text-[1.85rem] leading-none text-paper" onClick={() => setMenuOpen(false)}>
+          {site.monogram}
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">
