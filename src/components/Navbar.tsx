@@ -5,6 +5,7 @@ import { navLinks, site } from "../config/site";
 import { useBooking } from "../context/BookingContext";
 import { useLockBody } from "../hooks/useLockBody";
 import { btnPrimary, cn } from "../lib/styles";
+import { Logo } from "./Logo";
 
 export function Navbar() {
   const { openBooking } = useBooking();
@@ -38,8 +39,8 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex h-[4.5rem] max-w-[1440px] items-center justify-between px-5 md:px-10 lg:px-16">
-        <a href="#home" className="font-display text-[1.85rem] leading-none text-paper" onClick={() => setMenuOpen(false)}>
-          {site.monogram}
+        <a href="#home" className="text-paper" aria-label={site.monogram} onClick={() => setMenuOpen(false)}>
+          <Logo />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary">

@@ -1,7 +1,7 @@
 import type { BookingRequest, ContactMessage, CustomerInfo, PackageId } from "../types";
 
-const BOOKING_KEY = "zee.bookingRequests";
-const CONTACT_KEY = "zee.contactMessages";
+const BOOKING_KEY = "mark.bookingRequests";
+const CONTACT_KEY = "mark.contactMessages";
 
 /**
  * Browser stand-in for the future booking API.

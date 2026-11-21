@@ -6,27 +6,26 @@
  * Prices live in src/config/packages.ts.
  */
 export const site = {
-  monogram: "Z",
-  photographerName: "Z photos",
+  monogram: "Mark Photography",
+  photographerName: "Mark",
   copyrightName: "Mark",
-  title: "Z photos · Times Square Photography",
+  title: "Mark Photography · Times Square",
   description:
     "Capturing unforgettable moments in the heart of New York City. Experience Times Square through my lens.",
   footerDescription:
     "Editorial portraits and night photography in the neon heart of New York City.",
-  url: "https://zeenavarro.com",
-  email: "hello@zeenavarro.com",
-  phoneDisplay: "(347) 824-5460",
-  phoneHref: "tel:+13478245460",
+  url: "https://markphotography.com",
+  email: "hello@markphotography.com",
+  phoneDisplay: "(347) 296-5509",
+  phoneHref: "tel:+13472965509",
   whatsappUrl:
-    "https://wa.me/13478245460?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20Times%20Square%20photoshoot.",
-  instagramHandle: "@zeenavarro",
-  instagramUrl: "https://instagram.com/zeenavarro",
+    "https://wa.me/13472965509?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20a%20Times%20Square%20photoshoot.",
+  instagramHandle: "@markphotography",
+  instagramUrl: "https://instagram.com/markphotography",
   location: "Times Square, New York City",
   locationShort: "New York City",
   coordinates: "40.7580° N · 73.9855° W",
   heroPhotoId: "1496442226666-8d4d0e62e6e9",
-  portraitPhotoId: "1507003211169-0a1dd7228f2d",
 } as const;
 
 export const navLinks = [

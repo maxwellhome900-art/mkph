@@ -1,6 +1,7 @@
 import { Mail, MapPin } from "lucide-react";
 import { navLinks, site } from "../config/site";
 import { useBooking } from "../context/BookingContext";
+import { Logo } from "./Logo";
 import { InstagramIcon } from "./ui/InstagramIcon";
 import { WhatsAppIcon } from "./ui/WhatsAppIcon";
 
@@ -12,8 +13,7 @@ export function Footer() {
     <footer className="relative overflow-hidden border-t border-white/10 bg-black">
       <div className="relative z-10 mx-auto grid max-w-[1440px] gap-12 px-5 py-16 md:px-10 lg:grid-cols-4 lg:px-16">
         <div>
-          <p className="font-display text-3xl tracking-[0.16em] text-paper">{site.monogram}</p>
-          <p className="mt-2 font-grotesk text-[11px] tracking-[0.22em] text-muted uppercase">{site.photographerName}</p>
+          <Logo large />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">{site.footerDescription}</p>
         </div>
         <div>
@@ -84,9 +84,9 @@ export function Footer() {
       </div>
       <p
         aria-hidden="true"
-        className="pointer-events-none absolute -bottom-6 left-5 font-display text-[22vw] leading-none text-transparent [-webkit-text-stroke:1px_rgba(246,243,238,0.08)] select-none md:left-10"
+        className="pointer-events-none absolute -bottom-4 left-5 font-grotesk text-[5.2vw] leading-none whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgba(246,243,238,0.08)] select-none md:left-10"
       >
-        {site.monogram}
+        MARK
       </p>
     </footer>
   );

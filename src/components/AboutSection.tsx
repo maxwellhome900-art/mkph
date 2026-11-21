@@ -1,7 +1,6 @@
-import { about, site } from "../config/site";
+import { about } from "../config/site";
 import { useBooking } from "../context/BookingContext";
 import { btnPrimary } from "../lib/styles";
-import { Photo } from "./ui/Photo";
 import { Reveal } from "./ui/Reveal";
 import { SectionHeading } from "./ui/SectionHeading";
 
@@ -10,24 +9,8 @@ export function AboutSection() {
 
   return (
     <section id="about" className="scroll-mt-24 bg-ink">
-      <div className="mx-auto grid max-w-[1440px] items-center gap-12 px-5 py-24 md:px-10 lg:grid-cols-12 lg:gap-16 lg:px-16 lg:py-32">
-        <Reveal className="lg:col-span-5">
-          <figure className="relative">
-            <Photo
-              photoId={site.portraitPhotoId}
-              alt={`Portrait of ${site.photographerName}`}
-              className="aspect-[4/5] w-full"
-              sizes="(min-width: 1024px) 38vw, 100vw"
-              imgClassName="grayscale-[20%]"
-            />
-            <figcaption className="absolute bottom-4 left-4 bg-ink/80 px-3 py-2 font-grotesk text-[10px] tracking-[0.28em] text-paper uppercase">
-              {site.photographerName}
-            </figcaption>
-            <span className="absolute top-4 right-4 h-10 w-10 border-t border-r border-neon" aria-hidden="true" />
-          </figure>
-        </Reveal>
-
-        <div className="lg:col-span-7">
+      <div className="mx-auto max-w-[1440px] px-5 py-24 md:px-10 lg:px-16 lg:py-32">
+        <div className="max-w-3xl">
           <Reveal>
             <SectionHeading index="01" eyebrow="The photographer" title={about.headline} />
             <blockquote className="mt-8 max-w-2xl font-display text-2xl leading-snug text-paper italic md:text-3xl">

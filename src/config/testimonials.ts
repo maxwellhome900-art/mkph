@@ -7,7 +7,7 @@ export const testimonials: Testimonial[] = [
     name: "Maya Ellison",
     origin: "London",
     quote:
-      "We had forty minutes between shows and left with portraits that look like a magazine. Zee found light I didn't know existed in that crowd.",
+      "We had forty minutes between shows and left with portraits that look like a magazine. Mark found light I didn't know existed in that crowd.",
     rating: 5,
     sample: true,
   },
